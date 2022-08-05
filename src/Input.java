@@ -25,7 +25,6 @@ public class Input {
 			System.out.print("계속(I/O)?:");
 			io = this.sc.next();
 			this.sc.nextLine();
-			this.sc.nextLine();
 		}while(io.equals("i")||io.equals("I"));
 		return count;
 	}
