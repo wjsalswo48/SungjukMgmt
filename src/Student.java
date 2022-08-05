@@ -1,11 +1,12 @@
 
 public class Student {
 	private String hakbun, name;
-	private int kor,eng,mat,edp,tot;
+	private int kor, eng, mat, edp, tot;
 	private double avg;
 	private char grade;
-	
-	public Student() {}
+
+	public Student() {
+	}
 
 	public Student(String hakbun, String name, int kor, int eng, int mat, int edp) {
 		this.hakbun = hakbun;
@@ -90,8 +91,8 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return String.format("%-10s\t%10s\t%5d%5d%5d%5d\t\t%5d\t8.2%f%3c\n",
-				hakbun, name, kor, eng, mat, edp, tot, avg, grade);
+		return String.format("%-10s\t%10s\t%5d%5d%5d%5d\t\t%5d\t8.2%f%3c", hakbun, name, kor, eng, mat, edp, tot, avg,
+				grade);
 	}
-	
+
 }
